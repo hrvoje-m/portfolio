@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">MyPortfolio</div>
+    <ul>
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="hrvoje.html">Hrvoje</a></li>
+        <li><a href="ivan.html">Ivan</a></li>
+        <li class="dropdown">
+            <a href="#">Ostali ▾</a>
+            <ul class="dropdown-content">
+                <li><a href="https://gabrijelferit.github.io/cv/" target="_blank">Gabrijel</a></li>
+                <li><a href="https://marj-david.github.io/index.html" target="_blank">Jan i David</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<main>
+
+<!-- PROFIL -->
+<section class="profile">
+    <div class="profile-image-wrapper">
+        <img src="media/hrvoje.jpg" class="profile-img" onclick="openImage(this)">
+    </div>
+
+    <div class="profile-text">
+        <h1>Hrvoje Milošević</h1>
+        <p style="opacity: 0.6  ;">
+            Student 3. godine računarstva s interesom za kibernetičku sigurnost i razvoj softvera.<br>
+            Tijekom studija stekao sam iskustvo rada s različitim programskim jezicima i tehnologijama,<br>
+            a trenutno radim na završnom radu.<br><br>
+
+            Motiviran sam za daljnje usavršavanje i stjecanje praktičnog iskustva u IT industriji.
+        </p>
+    </div>
+</section>
+
+<!-- FULLSCREEN IMAGE -->
+<div id="imageModal" onclick="closeImage()">
+    <img src="">
+</div>
+
+<!-- OPĆE INFO -->
+<section class="box">
+    <h2>Opće informacije</h2>
+
+    <div class="info-grid">
+        <div class="info-item">
+            <span>Datum rođenja</span>
+            <p>2005.</p>
+        </div>
+
+        <div class="info-item">
+            <span>Mjesto rođenja</span>
+            <p><a href="https://www.slavonski-brod.hr/" target="_blank">Slavonski Brod</a></p>
+        </div>
+
+        <div class="info-item">
+            <span>Mjesto stanovanja</span>
+            <p><a href="https://slavonski-samac.hr/" target="_blank">Slavonski Šamac</a></p>
+        </div>
+
+        <div class="info-item">
+            <span>Hobiji</span>
+            <p><a href="https://en.wikipedia.org/wiki/Video_game">Gaming</a>, <a href="https://en.wikipedia.org/wiki/Computer_programming">programiranje</a>, 
+                <a href="https://en.wikipedia.org/wiki/Film">filmovi</a>, <a href="https://en.wikipedia.org/wiki/Basketball">košarka</a></p>
+        </div>
+
+        <div class="info-item">
+            <span>Spol</span>
+            <p>Muško</p>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- OBRAZOVANJE -->
+<section class="box">
+    <h2>Obrazovanje</h2>
+    <div class="list">
+        <a href="https://www.ferit.unios.hr" target="_blank">FERIT Osijek</a>
+        <a href="https://strukovna.com/" target="_blank">Srednja strukovna škola Antuna Horvata, Đakovo</a>
+        <a href="https://os-jkozarac-slavonski-samac.skole.hr/" target="_blank">Osnovna škola "Josip Kozarac" Slavonski Šamac</a>
+    </div>
+</section>
+
+<!-- VJEŠTINE -->
+<section class="box">
+    <h2>Vještine</h2>
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>Java / C#</span>
+        <span>SQL</span>
+        <span>Linux</span>
+        <span>Git</span>
+    </div>
+</section>
+
+<!-- RADNO ISKUSTVO -->
+<section class="box">
+    <h2>Radno iskustvo</h2>
+
+    <div class="list">
+        <a href="https://danieli-systec.com/hr/" target="_blank">
+            Danieli Sytec – L2 Praksa
+        </a>
+    </div>
+</section>
+
+<!--<section class="box">
+    <h2>Radno iskustvo</h2>
+    <div class="list">
+        <div class="item"><a href="https://danieli-systec.com/hr/" target="_blank">Danieli Systec - L2 Praksa</a></div>
+    </div>
+</section>-->
+
+<!-- AUDIO -->
+<section class="box">
+    <h2>Audio predstavljanje</h2>
+    <audio controls>
+        <source src="media/hrvoje.mp3" type="audio/mpeg">
+    </audio>
+</section>
+
+<!-- VIDEO -->
+<section class="box">
+    <h2>Video</h2>
+    <video controls width="300">
+        <source src="media/video.mp4" type="video/mp4">
+    </video>
+</section>
+
+<!-- GALERIJA -->
+<section class="box">
+    <h2>Galerija</h2>
+
+    <div class="gallery">
+        <img src="media/scarface.jpg" onclick="openGalleryImage(this)">
+        <img src="media/breakingbad.png" onclick="openGalleryImage(this)">
+        <img src="media/inception.bmp" onclick="openGalleryImage(this)">
+        <img src="media/interstellar.webp" onclick="openGalleryImage(this)">
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="footer-left">
+        <img src="media/feritlogo.png">
+    </div>
+
+    <div class="footer-center">
+        <p>
+            Web stranica izrađena tijekom pohađanja kolegija Multimedijska tehnika<br>
+            na Fakultetu elektrotehnike, računarstva i informacijskih tehnologija u Osijeku<br>
+            © 2026
+        </p>
+    </div>
+
+    <div class="footer-right">
+        <a href="https://www.ferit.unios.hr" target="_blank">FERIT</a>
+        <a href="https://moodle.srce.hr/2025-2026/course/view.php?id=233933" target="_blank">Multimedijska Tehnika</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

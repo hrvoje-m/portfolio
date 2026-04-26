@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">MyPortfolio</div>
+    <ul>
+        <li><a href="hrvoje.html">Hrvoje</a></li>
+        <li><a href="ivan.html">Ivan</a></li>
+        <li class="dropdown">
+            <a href="#">Ostali ▾</a>
+            <ul class="dropdown-content">
+                <li><a href="https://gabrijelferit.github.io/cv/" target="_blank">Gabrijel</a></li>
+                <li><a href="https://marj-david.github.io/index.html" target="_blank">Jan i David</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<main class="home">
+
+<section class="hero">
+    <h1>Portfolio studenata</h1>
+    <p>Predstavljanje poslodavcu kroz web stranicu</p>
+</section>
+
+<section class="students">
+
+    <div class="card" onclick="goToPage('hrvoje.html')">
+        <img src="media/hrvoje.jpg">
+        <h2>Hrvoje Milošević</h2>
+        <p style="opacity: 0.6;">Student računarstva fokusiran na kibernetičku sigurnost</p>
+    </div>
+
+    <div class="card" onclick="goToPage('ivan.html')">
+        <img src="media/ivan.jpeg">
+        <h2>Ivan Milanović</h2>
+        <p style="opacity: 0.6;">Student računarstva s fokusom na razvoj softvera i razumijevanje modernih tehnologija</p>
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    <div class="footer-left">
+        <img src="media/feritlogo.png">
+    </div>
+
+    <div class="footer-center">
+        <p>
+            Web stranica izrađena tijekom pohađanja kolegija Multimedijska tehnika<br>
+            na Fakultetu elektrotehnike, računarstva i informacijskih tehnologija u Osijeku<br>
+            © 2026
+        </p>
+    </div>
+
+    <div class="footer-right">
+        <a href="https://www.ferit.unios.hr" target="_blank">FERIT</a>
+        <a href="https://moodle.srce.hr/2025-2026/course/view.php?id=233933" target="_blank">Multimedijska Tehnika</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
